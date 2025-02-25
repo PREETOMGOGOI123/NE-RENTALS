@@ -1,12 +1,11 @@
 <script>
-    import {base} from '$app/paths'
     let isMenuOpen = $state(false);
 
 </script>
 <section class="header bg-neutral text-neutral-content">
     <nav class="navbar top-0 z-50 px-4 md:px-10 py-5">
         <div class="navbar-start">
-            <a class="btn btn-ghost normal-case text-xl md:text-3xl font-black logo italic" href="{base}/">NE RENTALS</a>
+            <a class="btn btn-ghost normal-case text-xl md:text-3xl font-black logo italic" href="/">NE RENTALS</a>
         </div>
         
         <!-- Mobile menu button  -->
@@ -25,8 +24,8 @@
         <!-- /* Desktop menu */ -->
         <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal px-1 gap-10">
-                <li><a href="{base}/#list-bikes" class="">List Your Bike</a></li>
-                <li><a href="{base}/#available" class="">View Bikes</a></li>
+                <li><a href="#list-bikes" class="">List Your Bike</a></li>
+                <li><a href="#available" class="">View Bikes</a></li>
             </ul>
         </div>
         <div class="navbar-end hidden lg:flex">
@@ -36,7 +35,7 @@
 
     <!-- /* Mobile menu dropdown */ -->
     {#if isMenuOpen}
-            <div class="lg:hidden fixed top-[90px] left-0 right-0 bg-base-100 p-4 shadow-lg z-50">
+            <div class="lg:hidden fixed top-[90px] left-0 right-0 bg--100 p-4 shadow-lg z-50">
             <div class="flex flex-col gap-4">
                 <p class="btn btn-outline w-full">☎️ +91 8011127009</p>
                 <a href="#list-bikes" class="btn w-full" onclick={() => isMenuOpen = false}>List Your Bike</a>
@@ -52,7 +51,6 @@
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-fill-color: transparent;
     background-size: contain;
     background-position: center;
   }
