@@ -25,8 +25,8 @@
         <!-- /* Desktop menu */ -->
         <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal px-1 gap-10">
-                <li><a href="#list-bikes" class="">List Your Bike</a></li>
-                <li><a href="#available" class="">View Bikes</a></li>
+                <li><a href="{base}/#list-bikes" class="">List Your Bike</a></li>
+                <li><a href="{base}/#available" class="">View Bikes</a></li>
             </ul>
         </div>
         <div class="navbar-end hidden lg:flex">
