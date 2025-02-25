@@ -1,5 +1,5 @@
 <script>
-	import '/src/app.css';
+	import '../app.css';
 
 	import Header from '$lib/layout/Header.svelte';
 	import Footer from '$lib/layout/Footer.svelte';
